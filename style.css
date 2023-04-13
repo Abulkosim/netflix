@@ -241,6 +241,10 @@ footer {
   margin: auto;
 }
 
+.footer-container span a {
+  font-size: 1.3rem;
+}
+
 footer a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: underline;
@@ -288,6 +292,14 @@ footer a {
 }
 
 @media (max-width: 1280px) {
+  header {
+    height: 80vh;
+  }
+
+  header::before {
+    height: 80%;
+  }
+
   .container {
     max-width: calc(100% - 64px);
   }
@@ -323,6 +335,15 @@ footer a {
 
 
 @media (max-width: 960px) {
+
+  header {
+    height: 60vh;
+  }
+
+  header::before {
+    height: 60%;
+  }
+
   .logo img {
     width: 90px;
   }
@@ -423,6 +444,78 @@ footer a {
   .third-section a {
     margin-bottom: 12px;
   }
+}
 
+@media (max-width: 690px) {
+  .register {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
 
+  .register input {
+    margin-bottom: 15px;
+  }
+
+  .register a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 10px 10px;
+    width: 100%;
+  }
+
+  .unlimited-movies h1 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .unlimited-movies p {
+    padding: 0 10px;
+  }
+
+  footer {
+    max-width: 100%;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .hidden-section {
+    display: none;
+  }
+
+  .first-section,
+  .second-section {
+    width: 40%;
+  }
+}
+
+@media (max-width: 410px) {
+  .register {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .register input {
+    width: 100%;
+  }
+
+  .register a {
+    width: 100%;
+  }
+
+  .links {
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 30px;
+  }
+
+  .first-section,
+  .second-section {
+    width: 100%;
+  }
 }
