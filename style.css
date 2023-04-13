@@ -34,6 +34,18 @@ header * {
   justify-content: space-between;
 }
 
+.divided {
+  max-width: 1028px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container {
+  height: 86px;
+}
+
 header::before {
   content: '';
   position: absolute;
@@ -95,7 +107,8 @@ header::before {
 .register {
   display: flex;
   align-items: center;
-  width: 586px;
+  max-width: 650px;
+  width: 100%;
   margin: auto;
   justify-content: space-between;
   margin-bottom: 50px;
@@ -124,7 +137,7 @@ header::before {
   padding: 10px 25px;
   font-size: 1.5rem;
   font-weight: 500;
-  max-width: 30%;
+  width: 30%;
 }
 
 .line {
@@ -149,6 +162,7 @@ header::before {
 
 .photo img {
   max-width: 508px;
+  width: 100%;
 }
 
 .text h2 {
@@ -275,11 +289,15 @@ footer a {
 
 @media (max-width: 1280px) {
   .container {
-    max-width: 1214px;
+    max-width: calc(100% - 64px);
+  }
+
+  .divided {
+    max-width: calc(100% - 64px);
   }
 
   .faq-container {
-    max-width: 1214px;
+    max-width: calc(100% - 48px);
   }
 
   .question-section {
@@ -289,7 +307,7 @@ footer a {
   }
 
   .footer-container {
-    max-width: 1214px;
+    max-width: calc(100% - 64px);
   }
 
   .first-section a,
@@ -303,3 +321,108 @@ footer a {
   }
 }
 
+
+@media (max-width: 960px) {
+  .logo img {
+    width: 90px;
+  }
+
+  .header-container {
+    height: 80px;
+  }
+
+  .unlimited-movies h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .unlimited-movies h2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  .unlimited-movies p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+
+  .divided {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .photo {
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+
+  .text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .text p {
+    font-size: 1.125rem;
+  }
+
+  .order {
+    flex-direction: column-reverse;
+  }
+
+  .faq-container {
+    max-width: calc(100% - 48px);
+  }
+
+  .faq-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .question-section {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .ready {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  .register {
+    margin-bottom: 32px;
+  }
+
+  .register input {
+    max-width: 69%;
+    padding: 10px;
+    padding-left: 15px;
+  }
+
+  .register a {
+    padding: 10px 25px;
+    max-width: 30%;
+  }
+
+  footer {
+    padding: 32px;
+  }
+
+  .footer-container {
+    max-width: 100%;
+  }
+
+  .first-section a,
+  .second-section a,
+  .third-section a {
+    margin-bottom: 12px;
+  }
+
+
+}
