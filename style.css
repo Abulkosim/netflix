@@ -337,11 +337,11 @@ footer a {
 @media (max-width: 960px) {
 
   header {
-    height: 60vh;
+    height: 80vh;
   }
 
   header::before {
-    height: 60%;
+    height: 80%;
   }
 
   .logo img {
@@ -517,5 +517,15 @@ footer a {
   .first-section,
   .second-section {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 60vh;
+  }
+
+  header::before {
+    height: 60%;
   }
 }
