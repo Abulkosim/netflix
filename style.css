@@ -6,7 +6,7 @@
 
 body {
   color: white;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 30;
 }
 
@@ -41,7 +41,7 @@ header::before {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .sign-in a {
@@ -53,9 +53,9 @@ header::before {
 }
 
 .sign-in a:hover,
-.unlimited-movies a:hover, 
+.unlimited-movies a:hover,
 .faq a:hover {
-  background: rgb(193,17,25);
+  background: rgb(193, 17, 25);
 }
 
 /* Unlimited Movies */
@@ -63,7 +63,7 @@ header::before {
 .movies-container {
   display: flex;
   justify-content: center;
-  height: 590px;
+  height: calc(100% - 99px);
 }
 
 .unlimited-movies {
@@ -142,12 +142,13 @@ header::before {
 .text {
   max-width: 48%;
 }
+
 .photo {
   max-width: 48%;
 }
 
 .photo img {
-  width: 508px;
+  max-width: 508px;
 }
 
 .text h2 {
@@ -203,10 +204,10 @@ header::before {
 }
 
 .plus-rotate {
-  transform:  rotateY(180deg) rotate(45deg);
+  transform: rotateY(180deg) rotate(45deg);
 }
 
-.ready { 
+.ready {
   text-align: center;
   font-weight: 400;
   font-size: 1.3rem;
@@ -244,16 +245,16 @@ footer a {
   margin-top: 30px;
 }
 
-.first-section, 
-.second-section, 
+.first-section,
+.second-section,
 .third-section {
   display: flex;
   width: 33%;
   flex-direction: column;
 }
 
-.first-section a, 
-.second-section a, 
+.first-section a,
+.second-section a,
 .third-section a {
   margin-bottom: 10px;
 }
@@ -272,21 +273,33 @@ footer a {
   cursor: pointer;
 }
 
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1214px;
+  }
 
+  .faq-container {
+    max-width: 1214px;
+  }
 
+  .question-section {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
 
+  .footer-container {
+    max-width: 1214px;
+  }
 
+  .first-section a,
+  .second-section a,
+  .third-section a {
+    font-size: 20px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
+  .uzb {
+    font-size: 20px;
+  }
+}
 
